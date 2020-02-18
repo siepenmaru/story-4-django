@@ -1,0 +1,108 @@
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="https://getbootstrap.com/docs/4.1/assets/img/favicons/favicon.ico">
+  <title>Avatar's Story 3</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- My StyleSheet inspired by Cover by @mdo -->
+  <link href="{% static 'myCSS.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto font-weight-bold">
+          <li class="nav-item active">
+            <a class="nav-link js-scroll-trigger" href="{% url 'ppw-index' %}">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'ppw-work' %}">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'ppw-about' %}">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'ppw-contact' %}">Contact Me</a>
+          </li>
+      </div>
+      </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto"></header>
+
+    <main>
+      <h1 class="cover-heading">Hello, World!</h1>
+      <p class="lead">Welcome to Avatar Azka's PPW Story 3 Page.</p>
+      <p class="lead">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+          Who's Avatar?
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">It's me, dummy.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" style="color: black;">
+                To learn more about me, visit the About Me section!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">:)</button>
+                <button type="button" class="btn btn-primary">:(</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </p>
+    </main>
+
+    <footer class="footer mt-auto">
+      <div class="inner">
+        <p>Website layout inspired by <a href="https://getbootstrap.com/docs/4.1/examples/cover/">Cover</a> by <a
+            href="https://twitter.com/mdo">@mdo</a>.
+          <br>Icons by <a href="https://www.flaticon.com/">Flaticon</a>
+          <br>Background by <a
+            href="https://www.reddit.com/r/photos/comments/ez2l3c/canon_rebel_sl3_north_end_boston_street/">r/photos</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="{% static 'myJquery.js' %}"></script>
+  <script src="{% static 'myPopperJS.js' %}"></script>
+  <script src="{% static 'bootstrap.min.js' %}"></script>
+
+
+
+</body>
+
+</html>

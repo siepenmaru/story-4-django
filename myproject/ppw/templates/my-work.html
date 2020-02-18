@@ -1,0 +1,70 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.1/assets/img/favicons/favicon.ico">
+    <title>Avatar's Story 3</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- My StyleSheet inspired by Cover by @mdo -->
+  <link href="{% static 'myCSS.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto font-weight-bold">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="{% url 'ppw-index' %}">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger" href="{% url 'ppw-work' %}">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="{% url 'ppw-about' %}">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="{% url 'ppw-contact' %}">Contact Me</a>
+                    </li>
+            </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container mt-auto mb-auto">
+        <div class="row">
+            <div class="col" style="text-align: left;">
+                <h1><br><br>Python Projects</h1>
+                <h2>BudayaKB Lite</h2>
+                <h2>Barcode Generator</h2>
+                <h1><br>HTML/CSS Web Projects</h1>
+                <h2><a href="https://avatars-webpage.herokuapp.com">avatars-webpage.herokuapp.com</a></h2>
+            </div>
+            <div class="col mt-auto">
+                <h1 style="font-size: 4em;">My Work<br><br></h1>
+                <img src="{% static 'work.jpg' %}" height=175px width=auto>
+            </div>
+        </div>
+    </div>
+
+
+  <script src="{% static 'myJquery.js' %}"></script>
+  <script src="{% static 'myPopperJS.js' %}"></script>
+  <script src="{% static 'bootstrap.min.js' %}"></script>
+
+
+
+</body>
+
+</html>
